@@ -1,0 +1,24 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+    username: postgres
+    password: root
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+
+info:
+  app:
+    name: Doktor Randevu Uygulaması
+
+logging:
+  level:
+    root: info
+    org.springframework.web: info
+    org.hibernate: info
+
+swagger:
+  enabled: true
